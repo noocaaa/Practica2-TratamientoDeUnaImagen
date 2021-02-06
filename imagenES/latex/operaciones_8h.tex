@@ -1,0 +1,128 @@
+\hypertarget{operaciones_8h}{}\section{operaciones.\+h File Reference}
+\label{operaciones_8h}\index{operaciones.\+h@{operaciones.\+h}}
+
+
+Fichero cabecera para las operaciones que se realizan con las imagenes a partir de ficheros.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{operaciones_8h_a0c8186d9b9b7880309c27230bbb5e69d}\label{operaciones_8h_a0c8186d9b9b7880309c27230bbb5e69d}} 
+typedef unsigned char {\bfseries byte}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{operaciones_8h_ad07e0e7c459926ce9b7421c11b8ad59c}{umbralizar\+\_\+imagen} (const char $\ast$fichE, const char $\ast$fichS, int T\+\_\+1, int T\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Umbralizar una imagen usando una escala de grises. \end{DoxyCompactList}\item 
+void \hyperlink{operaciones_8h_a1e678c1920bbe2e48894c3d6c0b82609}{zoom\+\_\+imagen} (const char $\ast$fichE, const char $\ast$fichS, int x\+\_\+1, int y\+\_\+1, int x\+\_\+2, int y\+\_\+2)
+\begin{DoxyCompactList}\small\item\em Hacemos zoom a una parte de la imagen. \end{DoxyCompactList}\item 
+void \hyperlink{operaciones_8h_af0ce950fa86c6d1762ebb81bb620bc80}{aumento\+\_\+contraste} (const char $\ast$fichE, const char $\ast$fichS, int min, int max)
+\begin{DoxyCompactList}\small\item\em aumento de contraste de la imagen \end{DoxyCompactList}\item 
+void \hyperlink{operaciones_8h_a193f5a889eb3087d90b632363b15daca}{morphing} (const char $\ast$fich1, const char $\ast$fich2)
+\begin{DoxyCompactList}\small\item\em Funcion que de una imagen llega a otra. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero cabecera para las operaciones que se realizan con las imagenes a partir de ficheros. 
+
+\begin{DoxyAuthor}{Author}
+Guillermo \& Noelia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+15/11/20 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{operaciones_8h_af0ce950fa86c6d1762ebb81bb620bc80}\label{operaciones_8h_af0ce950fa86c6d1762ebb81bb620bc80}} 
+\index{operaciones.\+h@{operaciones.\+h}!aumento\+\_\+contraste@{aumento\+\_\+contraste}}
+\index{aumento\+\_\+contraste@{aumento\+\_\+contraste}!operaciones.\+h@{operaciones.\+h}}
+\subsubsection{\texorpdfstring{aumento\+\_\+contraste()}{aumento\_contraste()}}
+{\footnotesize\ttfamily void aumento\+\_\+contraste (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+
+
+aumento de contraste de la imagen 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fichE,fichero} & de entrada \\
+\hline
+{\em fichS,fichero} & de salida \\
+\hline
+{\em min} & valor minimo del nuevo rango \\
+\hline
+{\em max} & valor maximo del nuevo rango \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+se supone que min y max son enteros. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{operaciones_8h_a193f5a889eb3087d90b632363b15daca}\label{operaciones_8h_a193f5a889eb3087d90b632363b15daca}} 
+\index{operaciones.\+h@{operaciones.\+h}!morphing@{morphing}}
+\index{morphing@{morphing}!operaciones.\+h@{operaciones.\+h}}
+\subsubsection{\texorpdfstring{morphing()}{morphing()}}
+{\footnotesize\ttfamily void morphing (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fich1,  }\item[{const char $\ast$}]{fich2 }\end{DoxyParamCaption})}
+
+
+
+Funcion que de una imagen llega a otra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fich1,la} & imagen de la que se parte \\
+\hline
+{\em fich2,la} & imagen a la que se quiere llegar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{operaciones_8h_ad07e0e7c459926ce9b7421c11b8ad59c}\label{operaciones_8h_ad07e0e7c459926ce9b7421c11b8ad59c}} 
+\index{operaciones.\+h@{operaciones.\+h}!umbralizar\+\_\+imagen@{umbralizar\+\_\+imagen}}
+\index{umbralizar\+\_\+imagen@{umbralizar\+\_\+imagen}!operaciones.\+h@{operaciones.\+h}}
+\subsubsection{\texorpdfstring{umbralizar\+\_\+imagen()}{umbralizar\_imagen()}}
+{\footnotesize\ttfamily void umbralizar\+\_\+imagen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{T\+\_\+1,  }\item[{int}]{T\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Umbralizar una imagen usando una escala de grises. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $<$fich\+E$>$} & nombre fichero contiene imagen original \\
+\hline
+{\em $<$fich\+S$>$} & nombre fichero contiene resultado de la transformaci�n \\
+\hline
+{\em T\+\_\+1,T\+\_\+2} & valores del intervalo de la umbralizaci�n \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Supondremos que el fichero pasado cumple con el requisito de P\+GM. Es decir, no tendra ninguna letra. 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{operaciones_8h_a1e678c1920bbe2e48894c3d6c0b82609}\label{operaciones_8h_a1e678c1920bbe2e48894c3d6c0b82609}} 
+\index{operaciones.\+h@{operaciones.\+h}!zoom\+\_\+imagen@{zoom\+\_\+imagen}}
+\index{zoom\+\_\+imagen@{zoom\+\_\+imagen}!operaciones.\+h@{operaciones.\+h}}
+\subsubsection{\texorpdfstring{zoom\+\_\+imagen()}{zoom\_imagen()}}
+{\footnotesize\ttfamily void zoom\+\_\+imagen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{fichE,  }\item[{const char $\ast$}]{fichS,  }\item[{int}]{x\+\_\+1,  }\item[{int}]{y\+\_\+1,  }\item[{int}]{x\+\_\+2,  }\item[{int}]{y\+\_\+2 }\end{DoxyParamCaption})}
+
+
+
+Hacemos zoom a una parte de la imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fichE,fichero} & de entrada \\
+\hline
+{\em fichS,fichero} & de salida \\
+\hline
+{\em x\+\_\+1,fila} & superior de la imagen \\
+\hline
+{\em y\+\_\+1,columna} & superior de la imagen \\
+\hline
+{\em x\+\_\+2,fila} & inferior de la imagen \\
+\hline
+{\em y\+\_\+2,columna} & inferior de la imagen. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,45 @@
+\hypertarget{imagen_8cpp}{}\section{imagen.\+cpp File Reference}
+\label{imagen_8cpp}\index{imagen.\+cpp@{imagen.\+cpp}}
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}imagen.\+h\char`\"{}}\newline
+Include dependency graph for imagen.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{imagen_8cpp_a5df40c15270f941be85ee88afb479a48}{operator==} (const \hyperlink{classImagen}{Imagen} \&izq, const \hyperlink{classImagen}{Imagen} \&dcha)
+\begin{DoxyCompactList}\small\item\em operación de comparación entre dos imagenes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyDate}{Date}
+20/05/20 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Guillermo \& Noelia 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{imagen_8cpp_a5df40c15270f941be85ee88afb479a48}\label{imagen_8cpp_a5df40c15270f941be85ee88afb479a48}} 
+\index{imagen.\+cpp@{imagen.\+cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!imagen.\+cpp@{imagen.\+cpp}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classImagen}{Imagen} \&}]{izq,  }\item[{const \hyperlink{classImagen}{Imagen} \&}]{dcha }\end{DoxyParamCaption})}
+
+
+
+operación de comparación entre dos imagenes 
+
+
+\begin{DoxyParams}{Parameters}
+{\em izq,una} & de las dos imagenes a comparar \\
+\hline
+{\em dcha,la} & otra imagen a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+devuelve true si son iguales, false si son diferentes 
+\end{DoxyReturn}
